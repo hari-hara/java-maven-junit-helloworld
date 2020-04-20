@@ -1,5 +1,4 @@
-pipeline {
-  agent any
+node{
   stage (' SCM Checkout'){
   git 'https://github.com/hari-hara/java-maven-junit-helloworld.git'
   }
