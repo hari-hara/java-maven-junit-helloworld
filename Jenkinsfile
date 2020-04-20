@@ -5,6 +5,6 @@ node{
   stage('Compile-Package'){
     def JDKHome = tool name: 'java', type: 'jdk'
     def mvnHome = tool name: 'maven', type: 'maven'
-    sh "${mvnHome}/bin/mvn package"
+    sh "${mvnHome}/bin/mvn clean install"
   }	
  } 
